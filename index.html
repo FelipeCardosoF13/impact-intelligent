@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Impact Intelligent, renfort de pose pour les entreprises de menuiserie et d’agencement en Savoie et en Isère.">
+  <title>Impact Intelligent — Pose de menuiseries en Savoie et en Isère</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="header">
+    <div class="shell nav-inner">
+      <a class="wordmark" href="#accueil"><img src="assets/logo.svg" alt="" width="68" height="68"><span>Impact <strong>Intelligent</strong></span></a>
+      <button class="menu" type="button" aria-controls="navigation" aria-expanded="false">Menu</button>
+      <nav id="navigation" aria-label="Navigation principale">
+        <a href="#interventions">Interventions</a>
+        <a href="#methode">Méthode</a>
+        <a href="#realisations">Réalisations</a>
+        <a class="nav-contact" href="#contact">Votre chantier ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenu">
+    <section class="hero" id="accueil">
+      <img class="hero-photo" src="assets/chantiers/cuisine-ouverte.webp" alt="" fetchpriority="high">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Savoie &amp; Isère</p>
+          <h1>La précision, de la pose <em>aux finitions.</em></h1>
+          <p class="intro">Pose de menuiseries et de mobilier sur mesure. Nous renforçons vos équipes sur chantier, de la lecture des plans au contrôle des finitions.</p>
+          <div class="hero-actions">
+            <a class="button gold" href="#realisations">Voir nos réalisations</a>
+            <a class="button hero-contact" href="#contact">Parlons de votre chantier</a>
+          </div>
+        </div>
+        <a class="discover" href="#interventions">Découvrir <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+    <section class="shell section" id="interventions" data-reveal>
+      <p class="eyebrow">Interventions</p>
+      <div class="section-head">
+        <h2>Un renfort pour vos équipes de pose</h2>
+        <p>Nous intervenons sur un lot, à une étape précise du chantier ou en appui lors d’un pic d’activité.</p>
+      </div>
+      <div class="services">
+        <details open><summary>Cuisines</summary><p>Pose des caissons et des meubles, mise à niveau et réglage des façades selon vos plans.</p></details>
+        <details><summary>Placards et dressings</summary><p>Montage des rangements sur mesure, ajustement des éléments et réglage des portes et tiroirs.</p></details>
+        <details><summary>Portes intérieures</summary><p>Pose, calage et réglage des ouvrants. Contrôle du fonctionnement avant la réception du lot.</p></details>
+        <details><summary>Ajustements et finitions</summary><p>Contrôle de l’alignement des chants, de la régularité des jeux et des éventuels frottements.</p></details>
+      </div>
+    </section>
+    <section class="method" id="methode">
+      <div class="shell section" data-reveal>
+        <p class="eyebrow">Méthode</p>
+        <div class="section-head">
+          <h2>Organisation sur chantier</h2>
+          <p>Felipe Cardoso est votre interlocuteur sur le chantier en Savoie et en Isère.</p>
+        </div>
+        <ol class="steps">
+          <li><h3>Avant la pose</h3><p>Nous validons les plans, le périmètre et le planning avec votre équipe.</p></li>
+          <li><h3>Pendant la pose</h3><p>Nous avançons en autonomie sur le lot convenu et signalons les points à valider.</p></li>
+          <li><h3>Avant la réception</h3><p>Nous vérifions les alignements, les jeux et le fonctionnement des ouvrants.</p></li>
+        </ol>
+        <details class="fabrication"><summary>Options de fabrication</summary><p>Selon le projet, nous pouvons vous aider à évaluer des options de fabrication au Portugal ou en Espagne, en tenant compte des capacités, des délais et du transport.</p></details>
+      </div>
+    </section>
+    <section class="shell section" id="realisations" data-reveal>
+      <p class="eyebrow">Réalisations</p>
+      <div class="section-head">
+        <h2>La pose en images</h2>
+        <p>Agencement intérieur, détails d’installation et finitions sur chantier.</p>
+      </div>
+      <noscript><a href="assets/chantiers/habillage-couloir.mp4">Voir la vidéo du chantier</a></noscript>
+      <div id="gallery" class="gallery" hidden></div>
+      <dialog id="media-dialog" aria-labelledby="media-title">
+        <form method="dialog"><button class="button close" aria-label="Fermer">Fermer ×</button></form>
+        <div id="media-view"></div>
+        <h3 id="media-title"></h3>
+        <p id="media-caption"></p>
+      </dialog>
+    </section>
+    <section class="contact" id="contact">
+      <div class="shell section contact-grid" data-reveal>
+        <div>
+          <p class="eyebrow">Savoie &amp; Isère</p>
+          <h2>Parlons de votre chantier</h2>
+          <p>Préparez les informations qui permettront de définir le périmètre, le délai et le budget de l’intervention.</p>
+          <a href="https://www.instagram.com/impact_Intelligent/" target="_blank" rel="noopener noreferrer">Instagram · @impact_Intelligent ↗</a>
+        </div>
+        <form id="brief">
+          <label for="project">Lot à poser</label>
+          <input required id="project" name="project" placeholder="Par exemple, pose de cuisines">
+          <label for="location">Commune du chantier</label>
+          <input required id="location" name="location" autocomplete="address-level2">
+          <label for="timing">Créneau souhaité</label>
+          <input id="timing" name="timing">
+          <button type="submit" class="button gold">Télécharger le récapitulatif <span aria-hidden="true">↓</span></button>
+          <p id="brief-status" role="status">Le récapitulatif est enregistré sur votre appareil.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="shell footer"><span>Impact Intelligent</span><a href="#accueil">Retour en haut ↑</a></footer>
+</body>
+</html>
